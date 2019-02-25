@@ -97,6 +97,7 @@ function rollBack() {
             afterConnection();
         }
         else {
+            console.log("Thanks for shopping with us!")
             connectionEnd();
         }
     })
