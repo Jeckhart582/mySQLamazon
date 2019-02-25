@@ -68,41 +68,41 @@ function lowStock() {
     })
 };
 
-function addItem() {
-    inquirer
-        .prompt([{
+// function addItem() {
+//     inquirer
+//         .prompt([{
 
-            name: "ID",
-            type: "input",
-            message: "Please enter item ID"
-        },
-        {
-            name: "depo",
-            type: "input",
-            messeage: "Please enter department"
-        },
-        {
-            name: "name",
-            type: "input",
-            message: "Please enter item name"
-        },
-        {
-            name:"price",
-            type: "input",
-            message: "Enter price ($$$)"
-        },
-        {
-            name: "stock",
-            type: "input",
-            message: "Please enter stock quantity"
-        }
-        ])
-        .then(function(input) {
-            connection.query("INSERT INTO products (id, product_name, department_name, price, stock_quantity)"
-            values(10, "CORSAIR Vengence 8gb DDR4", "Memory", 60, 33);
-        })
+//             name: "ID",
+//             type: "input",
+//             message: "Please enter item ID"
+//         },
+//         {
+//             name: "depo",
+//             type: "input",
+//             messeage: "Please enter department"
+//         },
+//         {
+//             name: "name",
+//             type: "input",
+//             message: "Please enter item name"
+//         },
+//         {
+//             name:"price",
+//             type: "input",
+//             message: "Enter price ($$$)"
+//         },
+//         {
+//             name: "stock",
+//             type: "input",
+//             message: "Please enter stock quantity"
+//         }
+//         ])
+//         .then(function(input) {
+//             connection.query("INSERT INTO products (id, product_name, department_name, price, stock_quantity)"
+//             values(10, "CORSAIR Vengence 8gb DDR4", "Memory", 60, 33);
+//         })
    
-}
+// }
 
 function connectionEnd() {
     connection.end()
